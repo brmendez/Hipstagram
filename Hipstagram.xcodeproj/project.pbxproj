@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4568286B19EED4F40057F77F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568286A19EED4F40057F77F /* AppDelegate.swift */; };
+		4568286E19EED4F40057F77F /* Hipstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4568286C19EED4F40057F77F /* Hipstagram.xcdatamodeld */; };
+		4568287019EED4F40057F77F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568286F19EED4F40057F77F /* ViewController.swift */; };
+		4568287319EED4F40057F77F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4568287119EED4F40057F77F /* Main.storyboard */; };
+		4568287519EED4F40057F77F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4568287419EED4F40057F77F /* Images.xcassets */; };
+		4568287819EED4F40057F77F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568287619EED4F40057F77F /* LaunchScreen.xib */; };
+		4568288419EED4F40057F77F /* HipstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568288319EED4F40057F77F /* HipstagramTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4568287E19EED4F40057F77F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4568285D19EED4F40057F77F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4568286419EED4F40057F77F;
+			remoteInfo = Hipstagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4568286519EED4F40057F77F /* Hipstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4568286919EED4F40057F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4568286A19EED4F40057F77F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4568286D19EED4F40057F77F /* Hipstagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hipstagram.xcdatamodel; sourceTree = "<group>"; };
+		4568286F19EED4F40057F77F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4568287219EED4F40057F77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4568287419EED4F40057F77F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4568287719EED4F40057F77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4568287D19EED4F40057F77F /* HipstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4568288219EED4F40057F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4568288319EED4F40057F77F /* HipstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipstagramTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4568286219EED4F40057F77F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4568287A19EED4F40057F77F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4568285C19EED4F40057F77F = {
+			isa = PBXGroup;
+			children = (
+				4568286719EED4F40057F77F /* Hipstagram */,
+				4568288019EED4F40057F77F /* HipstagramTests */,
+				4568286619EED4F40057F77F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4568286619EED4F40057F77F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4568286519EED4F40057F77F /* Hipstagram.app */,
+				4568287D19EED4F40057F77F /* HipstagramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4568286719EED4F40057F77F /* Hipstagram */ = {
+			isa = PBXGroup;
+			children = (
+				4568286A19EED4F40057F77F /* AppDelegate.swift */,
+				4568286F19EED4F40057F77F /* ViewController.swift */,
+				4568287119EED4F40057F77F /* Main.storyboard */,
+				4568287419EED4F40057F77F /* Images.xcassets */,
+				4568287619EED4F40057F77F /* LaunchScreen.xib */,
+				4568286C19EED4F40057F77F /* Hipstagram.xcdatamodeld */,
+				4568286819EED4F40057F77F /* Supporting Files */,
+			);
+			path = Hipstagram;
+			sourceTree = "<group>";
+		};
+		4568286819EED4F40057F77F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4568286919EED4F40057F77F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4568288019EED4F40057F77F /* HipstagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				4568288319EED4F40057F77F /* HipstagramTests.swift */,
+				4568288119EED4F40057F77F /* Supporting Files */,
+			);
+			path = HipstagramTests;
+			sourceTree = "<group>";
+		};
+		4568288119EED4F40057F77F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4568288219EED4F40057F77F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4568286419EED4F40057F77F /* Hipstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4568288719EED4F40057F77F /* Build configuration list for PBXNativeTarget "Hipstagram" */;
+			buildPhases = (
+				4568286119EED4F40057F77F /* Sources */,
+				4568286219EED4F40057F77F /* Frameworks */,
+				4568286319EED4F40057F77F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hipstagram;
+			productName = Hipstagram;
+			productReference = 4568286519EED4F40057F77F /* Hipstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4568287C19EED4F40057F77F /* HipstagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4568288A19EED4F40057F77F /* Build configuration list for PBXNativeTarget "HipstagramTests" */;
+			buildPhases = (
+				4568287919EED4F40057F77F /* Sources */,
+				4568287A19EED4F40057F77F /* Frameworks */,
+				4568287B19EED4F40057F77F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4568287F19EED4F40057F77F /* PBXTargetDependency */,
+			);
+			name = HipstagramTests;
+			productName = HipstagramTests;
+			productReference = 4568287D19EED4F40057F77F /* HipstagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4568285D19EED4F40057F77F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Brian Mendez";
+				TargetAttributes = {
+					4568286419EED4F40057F77F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					4568287C19EED4F40057F77F = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 4568286419EED4F40057F77F;
+					};
+				};
+			};
+			buildConfigurationList = 4568286019EED4F40057F77F /* Build configuration list for PBXProject "Hipstagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4568285C19EED4F40057F77F;
+			productRefGroup = 4568286619EED4F40057F77F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4568286419EED4F40057F77F /* Hipstagram */,
+				4568287C19EED4F40057F77F /* HipstagramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4568286319EED4F40057F77F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4568287319EED4F40057F77F /* Main.storyboard in Resources */,
+				4568287819EED4F40057F77F /* LaunchScreen.xib in Resources */,
+				4568287519EED4F40057F77F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4568287B19EED4F40057F77F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4568286119EED4F40057F77F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4568287019EED4F40057F77F /* ViewController.swift in Sources */,
+				4568286B19EED4F40057F77F /* AppDelegate.swift in Sources */,
+				4568286E19EED4F40057F77F /* Hipstagram.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4568287919EED4F40057F77F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4568288419EED4F40057F77F /* HipstagramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4568287F19EED4F40057F77F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4568286419EED4F40057F77F /* Hipstagram */;
+			targetProxy = 4568287E19EED4F40057F77F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4568287119EED4F40057F77F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4568287219EED4F40057F77F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4568287619EED4F40057F77F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4568287719EED4F40057F77F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4568288519EED4F40057F77F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4568288619EED4F40057F77F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4568288819EED4F40057F77F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hipstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4568288919EED4F40057F77F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hipstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4568288B19EED4F40057F77F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HipstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hipstagram.app/Hipstagram";
+			};
+			name = Debug;
+		};
+		4568288C19EED4F40057F77F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HipstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hipstagram.app/Hipstagram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4568286019EED4F40057F77F /* Build configuration list for PBXProject "Hipstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4568288519EED4F40057F77F /* Debug */,
+				4568288619EED4F40057F77F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4568288719EED4F40057F77F /* Build configuration list for PBXNativeTarget "Hipstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4568288819EED4F40057F77F /* Debug */,
+				4568288919EED4F40057F77F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4568288A19EED4F40057F77F /* Build configuration list for PBXNativeTarget "HipstagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4568288B19EED4F40057F77F /* Debug */,
+				4568288C19EED4F40057F77F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4568286C19EED4F40057F77F /* Hipstagram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4568286D19EED4F40057F77F /* Hipstagram.xcdatamodel */,
+			);
+			currentVersion = 4568286D19EED4F40057F77F /* Hipstagram.xcdatamodel */;
+			path = Hipstagram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4568285D19EED4F40057F77F /* Project object */;
+}
