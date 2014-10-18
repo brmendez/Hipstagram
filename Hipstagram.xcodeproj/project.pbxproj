@@ -11,6 +11,7 @@
 		45357F9B19F063BB00CEDEDA /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357F9A19F063BB00CEDEDA /* FooterView.swift */; };
 		45357F9F19F08BCC00CEDEDA /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */; };
 		45357FA119F1C48800CEDEDA /* PhotoLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */; };
+		4559174B19F1ECB0001FC9EF /* PinchGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4559174A19F1ECB0001FC9EF /* PinchGesture.swift */; };
 		4568286B19EED4F40057F77F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568286A19EED4F40057F77F /* AppDelegate.swift */; };
 		4568286E19EED4F40057F77F /* Hipstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4568286C19EED4F40057F77F /* Hipstagram.xcdatamodeld */; };
 		4568287019EED4F40057F77F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568286F19EED4F40057F77F /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		45357F9A19F063BB00CEDEDA /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
 		45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryCell.swift; sourceTree = "<group>"; };
+		4559174A19F1ECB0001FC9EF /* PinchGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchGesture.swift; sourceTree = "<group>"; };
 		4568286519EED4F40057F77F /* Hipstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568286919EED4F40057F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4568286A19EED4F40057F77F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				4568289819EF20370057F77F /* ThumbnailContainer.swift */,
 				4568288F19EEE0930057F77F /* GalleryViewController.swift */,
 				45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */,
+				4559174A19F1ECB0001FC9EF /* PinchGesture.swift */,
 			);
 			name = "Controller Layer";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				45357F9B19F063BB00CEDEDA /* FooterView.swift in Sources */,
 				4568289919EF20370057F77F /* ThumbnailContainer.swift in Sources */,
 				4568289019EEE0930057F77F /* GalleryViewController.swift in Sources */,
+				4559174B19F1ECB0001FC9EF /* PinchGesture.swift in Sources */,
 				4568289419EF13B80057F77F /* FiltersCell.swift in Sources */,
 				45357F9F19F08BCC00CEDEDA /* PhotoLibraryViewController.swift in Sources */,
 				45357FA119F1C48800CEDEDA /* PhotoLibraryCell.swift in Sources */,

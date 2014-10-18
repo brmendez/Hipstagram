@@ -28,7 +28,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
         
         //THIS IS THE START OF NEW STUFF WE LEARNED ON DAY 3
         
-        // Get image image, asset fetch results
+        // Get image, asset fetch results
         //holds all images from photo library
         self.imageManager = PHCachingImageManager()
         

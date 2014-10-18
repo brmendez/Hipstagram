@@ -47,8 +47,8 @@ class ViewController: UIViewController, PassToVCDelegate, UIImagePickerControlle
         //checks to see if we have filters in database
         let fetchRequest = NSFetchRequest(entityName: "Filter")
         var error : NSError?
+        
         //First fetch, sees if we have anything in database.
-
         if let filters = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) as? [Filter] {
             //checks if fetch produced any items
             if filters.isEmpty {
