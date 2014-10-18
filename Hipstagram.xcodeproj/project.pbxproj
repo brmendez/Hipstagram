@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45357F9919F0637C00CEDEDA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357F9819F0637C00CEDEDA /* HeaderView.swift */; };
+		45357F9B19F063BB00CEDEDA /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357F9A19F063BB00CEDEDA /* FooterView.swift */; };
+		45357F9F19F08BCC00CEDEDA /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */; };
+		45357FA119F1C48800CEDEDA /* PhotoLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */; };
 		4568286B19EED4F40057F77F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568286A19EED4F40057F77F /* AppDelegate.swift */; };
 		4568286E19EED4F40057F77F /* Hipstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4568286C19EED4F40057F77F /* Hipstagram.xcdatamodeld */; };
 		4568287019EED4F40057F77F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568286F19EED4F40057F77F /* ViewController.swift */; };
@@ -14,6 +18,15 @@
 		4568287519EED4F40057F77F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4568287419EED4F40057F77F /* Images.xcassets */; };
 		4568287819EED4F40057F77F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4568287619EED4F40057F77F /* LaunchScreen.xib */; };
 		4568288419EED4F40057F77F /* HipstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568288319EED4F40057F77F /* HipstagramTests.swift */; };
+		4568289019EEE0930057F77F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568288F19EEE0930057F77F /* GalleryViewController.swift */; };
+		4568289219EEE0A70057F77F /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568289119EEE0A70057F77F /* GalleryCell.swift */; };
+		4568289419EF13B80057F77F /* FiltersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568289319EF13B80057F77F /* FiltersCell.swift */; };
+		4568289919EF20370057F77F /* ThumbnailContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568289819EF20370057F77F /* ThumbnailContainer.swift */; };
+		4568289C19EF36380057F77F /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4568289A19EF36380057F77F /* photo2.jpg */; };
+		4568289D19EF36380057F77F /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4568289B19EF36380057F77F /* photo1.jpg */; };
+		456828A019EF36C70057F77F /* photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4568289E19EF36C70057F77F /* photo4.jpg */; };
+		456828A119EF36C70057F77F /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4568289F19EF36C70057F77F /* photo3.jpg */; };
+		456828A519EF823D0057F77F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456828A419EF823D0057F77F /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45357F9819F0637C00CEDEDA /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		45357F9A19F063BB00CEDEDA /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryCell.swift; sourceTree = "<group>"; };
 		4568286519EED4F40057F77F /* Hipstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568286919EED4F40057F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4568286A19EED4F40057F77F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +55,15 @@
 		4568287D19EED4F40057F77F /* HipstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4568288219EED4F40057F77F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4568288319EED4F40057F77F /* HipstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipstagramTests.swift; sourceTree = "<group>"; };
+		4568288F19EEE0930057F77F /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		4568289119EEE0A70057F77F /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		4568289319EF13B80057F77F /* FiltersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersCell.swift; sourceTree = "<group>"; };
+		4568289819EF20370057F77F /* ThumbnailContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailContainer.swift; sourceTree = "<group>"; };
+		4568289A19EF36380057F77F /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
+		4568289B19EF36380057F77F /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+		4568289E19EF36C70057F77F /* photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4.jpg; sourceTree = "<group>"; };
+		4568289F19EF36C70057F77F /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
+		456828A419EF823D0057F77F /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +105,14 @@
 		4568286719EED4F40057F77F /* Hipstagram */ = {
 			isa = PBXGroup;
 			children = (
-				4568286A19EED4F40057F77F /* AppDelegate.swift */,
-				4568286F19EED4F40057F77F /* ViewController.swift */,
-				4568287119EED4F40057F77F /* Main.storyboard */,
+				4568289619EF13CE0057F77F /* Controller Layer */,
+				4568289719EF13F30057F77F /* View Layer */,
+				4568289519EF13C80057F77F /* Model Layer */,
 				4568287419EED4F40057F77F /* Images.xcassets */,
 				4568287619EED4F40057F77F /* LaunchScreen.xib */,
 				4568286C19EED4F40057F77F /* Hipstagram.xcdatamodeld */,
+				456828A419EF823D0057F77F /* Filter.swift */,
+				4568286A19EED4F40057F77F /* AppDelegate.swift */,
 				4568286819EED4F40057F77F /* Supporting Files */,
 			);
 			path = Hipstagram;
@@ -93,6 +121,10 @@
 		4568286819EED4F40057F77F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4568289B19EF36380057F77F /* photo1.jpg */,
+				4568289A19EF36380057F77F /* photo2.jpg */,
+				4568289F19EF36C70057F77F /* photo3.jpg */,
+				4568289E19EF36C70057F77F /* photo4.jpg */,
 				4568286919EED4F40057F77F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +145,37 @@
 				4568288219EED4F40057F77F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4568289519EF13C80057F77F /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4568289119EEE0A70057F77F /* GalleryCell.swift */,
+				4568289319EF13B80057F77F /* FiltersCell.swift */,
+				45357F9819F0637C00CEDEDA /* HeaderView.swift */,
+				45357F9A19F063BB00CEDEDA /* FooterView.swift */,
+			);
+			name = "Model Layer";
+			sourceTree = "<group>";
+		};
+		4568289619EF13CE0057F77F /* Controller Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4568286F19EED4F40057F77F /* ViewController.swift */,
+				4568289819EF20370057F77F /* ThumbnailContainer.swift */,
+				4568288F19EEE0930057F77F /* GalleryViewController.swift */,
+				45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */,
+			);
+			name = "Controller Layer";
+			sourceTree = "<group>";
+		};
+		4568289719EF13F30057F77F /* View Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4568287119EED4F40057F77F /* Main.storyboard */,
+				45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */,
+			);
+			name = "View Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +258,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4568289D19EF36380057F77F /* photo1.jpg in Resources */,
+				456828A119EF36C70057F77F /* photo3.jpg in Resources */,
 				4568287319EED4F40057F77F /* Main.storyboard in Resources */,
+				4568289C19EF36380057F77F /* photo2.jpg in Resources */,
 				4568287819EED4F40057F77F /* LaunchScreen.xib in Resources */,
 				4568287519EED4F40057F77F /* Images.xcassets in Resources */,
+				456828A019EF36C70057F77F /* photo4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4568289219EEE0A70057F77F /* GalleryCell.swift in Sources */,
+				45357F9919F0637C00CEDEDA /* HeaderView.swift in Sources */,
 				4568287019EED4F40057F77F /* ViewController.swift in Sources */,
+				45357F9B19F063BB00CEDEDA /* FooterView.swift in Sources */,
+				4568289919EF20370057F77F /* ThumbnailContainer.swift in Sources */,
+				4568289019EEE0930057F77F /* GalleryViewController.swift in Sources */,
+				4568289419EF13B80057F77F /* FiltersCell.swift in Sources */,
+				45357F9F19F08BCC00CEDEDA /* PhotoLibraryViewController.swift in Sources */,
+				45357FA119F1C48800CEDEDA /* PhotoLibraryCell.swift in Sources */,
+				456828A519EF823D0057F77F /* Filter.swift in Sources */,
 				4568286B19EED4F40057F77F /* AppDelegate.swift in Sources */,
 				4568286E19EED4F40057F77F /* Hipstagram.xcdatamodeld in Sources */,
 			);
@@ -343,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hipstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hipstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -411,6 +489,7 @@
 				4568288919EED4F40057F77F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4568288A19EED4F40057F77F /* Build configuration list for PBXNativeTarget "HipstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +498,7 @@
 				4568288C19EED4F40057F77F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
