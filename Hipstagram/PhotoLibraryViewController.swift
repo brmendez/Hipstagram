@@ -14,9 +14,12 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
     var assetFetchResults : PHFetchResult!
     var imageManager : PHCachingImageManager!
     var assetCellSize : CGSize!
+    var vcLargeCellSize : CGSize!
     
     var delegate : PassToVCDelegate?
-    var vcLargeCellSize : CGSize!
+    
+    var pinchGesture = PinchGesture()
+    var flowLayout : UICollectionViewFlowLayout!
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -38,9 +41,39 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
         // Determine device scale, adjust asset cell size
         var scale = UIScreen.mainScreen().scale
         var flowLayout = self.collectionView.collectionViewLayout as UICollectionViewFlowLayout
-        
         var cellSize = flowLayout.itemSize
         self.assetCellSize = CGSizeMake(cellSize.width * scale, cellSize.height * scale)
+        
+        self.pinchGesture.collectionView = self.collectionView
+        self.pinchGesture.flowLayout = self.flowLayout
+//        var pinchRecognizer = UIPinchGestureRecognizer(target: pinchGesture, action: "activatePinch:")
+//        self.collectionView.addGestureRecognizer(pinchRecognizer)
+
+        var pinch = UIPinchGestureRecognizer(target: self, action: "activatePinch:")
+        
+        func activatePinch (gestureRecognizer: UIPinchGestureRecognizer) {
+            
+//            if gestureRecognizer.state == UIGestureRecognizerState.Began {
+//                
+//            }
+//            if gestureRecognizer.state == UIGestureRecognizerState.Changed {
+//                
+//            }
+            if gestureRecognizer.state == UIGestureRecognizerState.Ended {
+                self.collectionView!.performBatchUpdates({ () -> Void in
+                    var currentSize = self.flowLayout!.itemSize
+                    if gestureRecognizer.velocity < 0 {
+                        self.flowLayout!.itemSize = CGSize(width: currentSize.width * 2, height: currentSize.height * 2)
+                    } else {
+                        self.flowLayout!.itemSize = CGSize(width: currentSize.width / 2, height: currentSize.height / 2)
+                    }
+                    }, completion: nil)
+            }
+            
+        }
+        
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -51,7 +84,6 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PHOTO_LIBRARY_CELL", forIndexPath: indexPath) as PhotoLibraryCell
         
         var asset = self.assetFetchResults[indexPath.row] as PHAsset
-        
         self.imageManager.requestImageForAsset(asset, targetSize: self.assetCellSize, contentMode: PHImageContentMode.AspectFill, options: nil) { (image, info) -> Void in
             cell.imageView.image = image
         }
@@ -61,7 +93,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         var asset = self.assetFetchResults[indexPath.row] as PHAsset
-        self.imageManager.requestImageForAsset(asset, targetSize: self.assetCellSize, contentMode: PHImageContentMode.AspectFill, options: nil) { (image, info) -> Void in
+        self.imageManager.requestImageForAsset(asset, targetSize: self.assetCellSize!, contentMode: PHImageContentMode.AspectFill, options: nil) { (image, info) -> Void in
             self.delegate?.userDidSelectPhoto(image)
             self.dismissViewControllerAnimated(true, completion: nil)
         }

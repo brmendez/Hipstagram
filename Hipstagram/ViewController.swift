@@ -21,7 +21,6 @@ class ViewController: UIViewController, PassToVCDelegate, UIImagePickerControlle
     @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
     
-    
     var managedObjectContext : NSManagedObjectContext!
     var filters : [Filter]?
     var thumbnailContainers = [ThumbnailContainer]()
@@ -119,6 +118,14 @@ class ViewController: UIViewController, PassToVCDelegate, UIImagePickerControlle
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+//        self.imageQueue.addOperationWithBlock { () -> Void in
+//            var image = CIImage(image: self.originalThumbnail)
+//            var imageFilter = CIFilter(name: self.filters[indexPath.row].name)
+//        }
+        
+        
+        
         var filteredThumbnail = ThumbnailContainer(filterName: self.filters![indexPath.row].name, thumbnail: self.imageView.image!, queue: imageQueue, context: self.context!)
         filteredThumbnail.generateFilterThumbnail { (image) -> Void in
             self.imageView.image = image
@@ -152,7 +159,9 @@ class ViewController: UIViewController, PassToVCDelegate, UIImagePickerControlle
             let imagePicker = UIImagePickerController()
             imagePicker.allowsEditing = true
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
-                
+                imagePicker.allowsEditing = true
+                imagePicker.delegate = self
+                imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
             }
             imagePicker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum
             imagePicker.delegate = self
@@ -164,10 +173,15 @@ class ViewController: UIViewController, PassToVCDelegate, UIImagePickerControlle
             
         }
         
+        let avFoundationAction = UIAlertAction(title: "AVFoundation", style: UIAlertActionStyle.Default) { (action) -> Void in
+            self.performSegueWithIdentifier("SHOW_AV", sender: self)
+        }
+        
         alertController.addAction(galleryAction)
         alertController.addAction(filterAction)
         alertController.addAction(cameraAction)
         alertController.addAction(photoLibraryAction)
+        alertController.addAction(avFoundationAction)
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }

@@ -19,6 +19,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
     var images = [UIImage]()
     
     var delegate : PassToVCDelegate?
+    var flowlayout : UICollectionViewFlowLayout!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +33,33 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
         self.images.append(image3!)
         self.images.append(image4!)
         
+        self.flowlayout = self.collectionView.collectionViewLayout as UICollectionViewFlowLayout
+        // Do any additional setup after loading the view.
+        
+        var pinch = UIPinchGestureRecognizer(target: self, action: "pinchAction:")
+        self.collectionView.addGestureRecognizer(pinch)
         
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
     }
+    
+    func pinchAction(pinch : UIPinchGestureRecognizer) {
+        
+        
+        if pinch.state == UIGestureRecognizerState.Ended {
+            println(pinch.velocity)
+            self.collectionView.performBatchUpdates({ () -> Void in
+                if pinch.velocity < 0 {
+                    self.flowlayout.itemSize = CGSize(width: self.flowlayout.itemSize.width * 2, height: self.flowlayout.itemSize.height * 2)
+                } else {
+                    self.flowlayout.itemSize = CGSize(width: self.flowlayout.itemSize.width / 0.5, height: self.flowlayout.itemSize.height / 0.5)
+                }
+                }, completion: nil )
+        }
+        
+    }
+    
 
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         

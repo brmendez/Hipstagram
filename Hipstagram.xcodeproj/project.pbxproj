@@ -28,6 +28,7 @@
 		456828A019EF36C70057F77F /* photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4568289E19EF36C70057F77F /* photo4.jpg */; };
 		456828A119EF36C70057F77F /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4568289F19EF36C70057F77F /* photo3.jpg */; };
 		456828A519EF823D0057F77F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456828A419EF823D0057F77F /* Filter.swift */; };
+		45B4A0DA19F37DDA00972056 /* AVFoundationCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4A0D919F37DDA00972056 /* AVFoundationCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		4568289E19EF36C70057F77F /* photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4.jpg; sourceTree = "<group>"; };
 		4568289F19EF36C70057F77F /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
 		456828A419EF823D0057F77F /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		45B4A0D919F37DDA00972056 /* AVFoundationCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVFoundationCameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		4568289519EF13C80057F77F /* Model Layer */ = {
 			isa = PBXGroup;
 			children = (
+				45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */,
 				4568289119EEE0A70057F77F /* GalleryCell.swift */,
 				4568289319EF13B80057F77F /* FiltersCell.swift */,
 				45357F9819F0637C00CEDEDA /* HeaderView.swift */,
@@ -167,6 +170,7 @@
 				4568289819EF20370057F77F /* ThumbnailContainer.swift */,
 				4568288F19EEE0930057F77F /* GalleryViewController.swift */,
 				45357F9E19F08BCC00CEDEDA /* PhotoLibraryViewController.swift */,
+				45B4A0D919F37DDA00972056 /* AVFoundationCameraViewController.swift */,
 				4559174A19F1ECB0001FC9EF /* PinchGesture.swift */,
 			);
 			name = "Controller Layer";
@@ -176,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				4568287119EED4F40057F77F /* Main.storyboard */,
-				45357FA019F1C48800CEDEDA /* PhotoLibraryCell.swift */,
 			);
 			name = "View Layer";
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				4559174B19F1ECB0001FC9EF /* PinchGesture.swift in Sources */,
 				4568289419EF13B80057F77F /* FiltersCell.swift in Sources */,
 				45357F9F19F08BCC00CEDEDA /* PhotoLibraryViewController.swift in Sources */,
+				45B4A0DA19F37DDA00972056 /* AVFoundationCameraViewController.swift in Sources */,
 				45357FA119F1C48800CEDEDA /* PhotoLibraryCell.swift in Sources */,
 				456828A519EF823D0057F77F /* Filter.swift in Sources */,
 				4568286B19EED4F40057F77F /* AppDelegate.swift in Sources */,
